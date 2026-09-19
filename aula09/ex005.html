@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeiros passos com DOM</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <h1>Iniciando estudos com DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo a usar o <b>DOM</b> em Javascript.</p>
+        <div id="msg1">Clique em mim!</div>
+        <div class="msg2">Passe por aqui!</div>
+        <div id="seletor">Seletor</div>
+
+
+        <script>
+/*Para chamar/modificar um elemento pela TAG*/
+        let p1 = window.document.getElementsByTagName("p")[1]
+        p1.style.color = 'red'
+        p1.style.backgroundColor = 'black'
+        document.write(p1.innerHTML/*innerHTML vem formatado como tava, innertext vem só o texto sem nada*/)
+        let corpo = window.document.body
+        corpo.style.backgroundColor = 'rgb(1, 90, 90)'
+
+
+/*Para chamar/modificar um elemento pelo ID*/
+        let d = window.document.getElementById('msg1')
+        d.style.background = 'green'
+        d.innerText = 'EJDALKDLAS'/*modificar conteúdo da div usando DOM*/
+
+
+/*Para chamar/modificar um elemento pela CLASSE*/
+        let d2 = window.document.getElementsByClassName('msg2')[0]
+        d2.style.backgroundColor = 'blue'
+
+
+/*Para chamar/modificar um elemento usando SELETOR (mais recente, usado se for fazer alteraçoes rápidas*/
+        let d3 = window.document.querySelector('div#seletor')
+        d3.style.color = 'red'
+        </script>
+
+
+</body>
+</html>

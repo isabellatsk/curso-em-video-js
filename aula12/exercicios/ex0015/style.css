@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(103, 126, 255);
+    font: normal 15pt arial;
+}
+
+header {
+    color: aliceblue;
+    text-align: center;
+}
+
+section {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.705);
+}
+
+footer {
+    color: aliceblue;
+    text-align: center;
+    font-style: italic;
+}
+
+#res {
+    text-align: center; /* Centraliza o texto e imagens dentro do contêiner */
+}
+
+#res img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px auto; /* Adiciona uma margem automática para centralizar horizontalmente */
+}
